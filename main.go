@@ -2,21 +2,14 @@ package main
 
 import "fmt"
 
-type function func(string, string) bool
+type listFunction func([]int) []int
 
-func validate(lista int[...], fun function) string {
-	if fun(str, validator) {
-		return str
-	}
-	return ""
-}
-
-func larger_than(str1, str2 string) bool {
-	return len(str1) > len(str2)
+func executar_estrategia(lista *[]int, estrategia listFunction) {
+	*lista = estrategia(*lista)
 }
 
 func main() {
-	a := "Luciana"
-	b := "Linda"
-	fmt.Println(validate(a, b, larger_than))
+	primes := []int{11, 2, 2, 2, 5, 3, 3, 11, 5, 11, 13, 5, 2, 3, 11}
+	// executar_estrategia(&primes, removeDuplicates)
+	fmt.Println(primes)
 }
