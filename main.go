@@ -93,7 +93,7 @@ func main() {
 
   lista1 := []int{11, 2, 2, 2, 5, 3, 3, 11, 5, 11, 13, 5, 2, 3, 11}
 	executar_estrategia(&lista1, filterEven)
-	fmt.Println("Lista Crescente: ", lista1)
+	fmt.Println(lista1)
   
 	lista2 := []int{11, 2, 2, 2, 5, 3, 3, 11, 5, 11, 13, 5, 2, 3, 11}
 	executar_estrategia(&lista2, ordenarDecrescente)
