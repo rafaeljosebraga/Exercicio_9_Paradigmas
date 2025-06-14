@@ -8,41 +8,17 @@ func executar_estrategia(lista *[]int, estrategia listFunction) {
 	*lista = estrategia(*lista)
 }
 
-func swap(pos1, pos2 *int) {
-	var aux int = *pos1
-	*pos1 = *pos2
-	*pos2 = aux
-}
+func filterEven(array []int) []int {
+	rem := make([]int, len(array))
+	k := 0
 
-func sortAscending(array []int) []int {
-	var swapped bool = true
-	var start int = 0
-	var end int = len(array) - 1
-
-	for swapped {
-		swapped = false
-
-		for i := start; i < end; i++ {
-			if array[i] > array[i+1] {
-				swap(&array[i], &array[i+1])
-				swapped = true
-			}
+	for i := 0; i < len(array); i++ {
+		if array[i]%2 == 0 {
+			rem[k] = array[i]
+			k++
 		}
-		if !swapped {
-			break
-		}
-		swapped = false
-		end--
-
-		for i := end - 1; i >= start; i-- {
-			if array[i] > array[i+1] {
-				swap(&array[i], &array[i+1])
-				swapped = true
-			}
-		}
-		start++
 	}
-	return array
+	return rem[0:k]
 }
 
 func main() {
