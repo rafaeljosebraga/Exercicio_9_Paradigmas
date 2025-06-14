@@ -49,4 +49,8 @@ func main() {
 	primes := []int{11, 2, 2, 2, 5, 3, 3, 11, 5, 11, 13, 5, 2, 3, 11}
 	// executar_estrategia(&primes, removeDuplicates)
 	fmt.Println(primes)
+	
+	primes2 := []int{11, 2, 2, 2, 5, 3, 3, 11, 5, 11, 13, 5, 2, 3, 11}
+	executar_estrategia(&primes2, sortAscending)	
+	fmt.Println(primes2)
 }
