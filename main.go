@@ -43,7 +43,7 @@ func main() {
 	executar_estrategia(&primes, removeDuplicates)
 	fmt.Println(primes)
 
-	lista := []int{11, 2, 2, 2, 5, 3, 3, 11, 5, 11, 13, 5, 2, 3, 11}
+	lista2 := []int{11, 2, 2, 2, 5, 3, 3, 11, 5, 11, 13, 5, 2, 3, 11}
 	executar_estrategia(&lista2, ordenarDecrescente)
-	fmt.Println("Lista Decrescente: ", lista)
+	fmt.Println("Lista Decrescente: ", lista2)
 }
