@@ -89,15 +89,15 @@ func removeDuplicates(lista []int) []int {
 func main() {
 	primes := []int{11, 2, 2, 2, 5, 3, 3, 11, 5, 11, 13, 5, 2, 3, 11}
 	executar_estrategia(&primes, removeDuplicates)
-	fmt.Println(primes)
+	fmt.Println("Remoção de duplicatas: ",primes)
 	
 	primes2 := []int{11, 2, 2, 2, 5, 3, 3, 11, 5, 11, 13, 5, 2, 3, 11}
 	executar_estrategia(&primes2, sortAscending)	
-	fmt.Println(primes2)
+	fmt.Println("Lista Crescente: ",primes2)
 
   lista1 := []int{11, 2, 2, 2, 5, 3, 3, 11, 5, 11, 13, 5, 2, 3, 11}
 	executar_estrategia(&lista1, filterEven)
-	fmt.Println("Lista Crescente: ", lista1)
+	fmt.Println("Numeros pares ", lista1)
   
 	lista2 := []int{11, 2, 2, 2, 5, 3, 3, 11, 5, 11, 13, 5, 2, 3, 11}
 	executar_estrategia(&lista2, ordenarDecrescente)
